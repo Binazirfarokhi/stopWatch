@@ -5,10 +5,10 @@ class Timer{
     }
     start(){
       
-// this.intervalId = setInterval(() => {
-//               this.timer++;
-//               timershow.innerHTML = this.timer;
-//            }, 1000);
+this.intervalId = setInterval(() => {
+              this.timer++;
+              timershow.innerHTML = this.timer;
+           }, 1000);
 
           
     }
@@ -25,24 +25,24 @@ const timershow = document.getElementById('timershow');
 const startbtn = document.getElementById('startbtn');
 const pausebtn = document.getElementById('pausebtn');
 const resetbtn = document.getElementById('Resetbtn');
-
+const timer = new Timer();
 startbtn.addEventListener('click',()=>{
 
-   const objecttime = new Timer();
-    objecttime.start();
+   
+    timer.start();
 
    
 })
 
 pausebtn.addEventListener('click',()=>{
-    const objecttime = new Timer();
-objecttime.pause();
+   
+timer.pause();
 
    
 })
 resetbtn.addEventListener('click',()=>{
-    const objecttime = new Timer();
-objecttime.reset();
+  
+timer.reset();
 
   
 })

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    line-height: 1.5;
+    background-color: #aaa2a2;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+.btns{
+    border: 2px solid black;
+    width:50%;
+padding: 50px;
+display: grid;
+align-items: center;
+justify-items: center;
+grid-template-columns: repeat(1,1fr);
+
+
+gap:.5rem;
+margin: auto;
+}
+.btns .number{
+    grid-column: 1/-1;
+}
+button{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem;
+}
